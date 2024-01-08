@@ -1,11 +1,10 @@
 import React from "react";
-import photoGrid from "../images/photo-grid.png";
 
 export default function Hero() {
   return (
     <section class="hero-container">
       <div className="photo-grid-container">
-        <img src={photoGrid} class="photo-grid"/>
+        <img src="/images/photo-grid.png" class="photo-grid"/>
       </div>
       
       <div className="hero-info-container">
