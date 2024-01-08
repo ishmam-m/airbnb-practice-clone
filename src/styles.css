@@ -1,6 +1,12 @@
 body {
   margin: 0;
+  font-family: Poppins;
 }
+
+p {
+  margin: 0px;
+}
+
 .navbar {
   display: flex;
   padding: 20px 36px;
@@ -18,7 +24,6 @@ body {
 
 .hero-info-container {
   padding-left: 36px;
-  font-family: Poppins;
 }
 
 .hero-header {
@@ -29,4 +34,32 @@ body {
 .description {
   margin: 0px;
   max-width: 320px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 176px;
+  font-size: 12px;
+  margin-left: 36px;
+  margin-top: 50px;
+}
+
+.card-image {
+  width: 176px;
+  height: 235px;
+  margin-bottom: 9px;
+}
+
+.star-icon {
+  margin-right: 4px;
+}
+
+.activity {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.grey-text {
+  color: #918E9B;
 }
