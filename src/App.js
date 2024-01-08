@@ -7,12 +7,8 @@ import data from "./data.js";
 const cards = data.map(element => {
   return ( 
     <Card
-      img={element.coverImg}
-      rating={element.stats.rating}
-      reviewCount={element.stats.reviewCount}
-      location={element.location}
-      title={element.title}
-      price={element.price}
+      key={element.id}
+      element={element}
     />
   );
 });

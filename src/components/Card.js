@@ -3,16 +3,17 @@ import React from "react";
 export default function Card(props) {
   return (
     <div className="card-container">
-      <img src={"/images/" + props.img} className="card-image" />
+      {props.element.openSpots === 0 && <div className="card-badge">SOLD OUT</div>}
+      <img src={"/images/" + props.element.coverImg} className="card-image" />
       <p>
         <img src="/images/Star.png" className="star-icon"/>
-        {props.rating} <span className="grey-text">({props.reviewCount}) &#8226; {props.location}</span>
+        {props.element.stats.rating} <span className="grey-text">({props.element.stats.reviewCount}) &#8226; {props.element.location}</span>
       </p>
       <p className="activity">
-        {props.title}
+        {props.element.title}
       </p>
       <p>
-        <b>From ${props.price}</b> / person
+        <b>From ${props.element.price}</b> / person
       </p>
     </div>
   );
